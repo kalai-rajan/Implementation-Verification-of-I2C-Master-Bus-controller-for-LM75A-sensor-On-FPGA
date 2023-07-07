@@ -3,6 +3,12 @@
 In this project a I2C master bus controller (is designed using Verilog HDL and the design is verified using System verilog)
 for interfacing LM75A Sesnor with Altera DE1 FPGA.
 
+**Applied Technical Skills**
+Hardware description Language  : Verilog.
+Hardware Verification Language : System Verilog.
+Tools Worked with              : Modelsim, Questasim, Altera Quartus.
+Hardware Boards worked with    : Altera Cyclone series DE1 FPGA.
+
 # LM75A SENSOR
 
 LM75A is a 11-bot digital temperature sensor based on I2C protocol, it has semiconductor based sensor which outputs analog 
