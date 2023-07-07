@@ -34,7 +34,7 @@ The timing diagram are taken from the [LM75A Datasheet](https://www.nxp.com/docs
 NXP Semiconductors. The timing diagram is based upon the I2C Protocol, and this timing diagram is the basis to design 
 of I2C master bus controller state machine and implement them in the FPGA using Verilog.
 
-The pointer byte is 8bit long and first 6 bits value will be 0, the remaing 2 bit value, has 
+The pointer bye's first 6 bits value will be 0, the remaing 2 bit value, has 
 addreess of the register we are going to acess.
 
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/751e684a-e904-4a69-870a-ffc176a7b8be)
@@ -46,6 +46,105 @@ addreess of the register we are going to acess.
 **_Timing diagram for writting Tos or Thyst registers._**
 
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/5b20b788-e117-4550-a7e7-f5859c560a08)
+
+####State machine design
+
+**Stae machine for reading 2 byte data from the Tos or Thys or Temp Register._**
+
+![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/e15c9a13-7bbd-4322-8ab1-154d739cd9f2)
+
+**_State machine for writting Tos or Thyst registers._**
+![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/7991f9d7-e776-4f08-96a5-5cdb37b57980)
+
+#####Simulation 
+
+**Simulation waveform for reading data**
+![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/00b8ac9d-8308-430e-b380-d58f4922c4e3)
+
+**Simulation waveform for writting data**
+
+![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/b1ff8f97-92a7-4d58-8de1-0d9946c5f2e4)
+
+#######Verfication of the design using SV
+
+[click  here to execute  the Testebench code in EDA Playground](https://www.edaplayground.com/x/me93)
+
+####### Implementation in FPGA
+
+![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/7d33fb20-5965-40dc-9af5-107d08034e29)
+
+
+**READING TEMPERATURE DATA**
+
+![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/11a492de-3d6a-481d-920c-afc866cfe790)
+
+The pointer register inputs are configured as 00 also after releasing the reset we could get
+to see the data of the temperature register in seven segment display which is encoded in
+hexadecimal value. The actual value in degrees in given in below calculations.
+
+Calculations:
+P 0 F E
+P- POSITIVE
+0FE- 0000 1111 1110.
+0000 1111 1110 = 254
+temp= resolution*254
+=0.125*254
+=31.75 degree C
+
+**READING Tos DATA**
+
+![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/f717d6ea-da4f-4d32-a009-5610a565bbc0)
+
+After changing the reset button, we obtain the data in the seven segment display and the
+data is encoded in the hexadecimal format the following calculations get us the actual
+values.
+
+Calculations
+P 0 A 0
+P- POSITIVE
+0FE-0000 1010 0000
+0000 1010 0000 = 160.
+temp= resolution*160.
+=0.5*160.
+=80 degree celsius.
+
+**READING Thys DATA**
+
+![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/03dda51a-85ed-4d92-b576-1cf4959ce751)
+
+The same procedure of changing the pointer register pins from 00 to 11 is done now and
+then we need to press the reset button to get the data of Thys Register and its actual value
+is calculated is as follows.
+
+Calculations
+P 0 9 6
+P- POSITIVE
+0FE-0000 1001 0110
+0000 1001 0110 = 150
+temp= resolution*150
+=0.5*150
+=75 degree C
+
+**READING Thys DATA after writting some value**
+
+![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/c561f8b9-ed70-4f0c-87fe-5687a4caa760)
+
+Now the FPGA board is loaded with Write FSM design, we set the pointer register to 10 to
+select the Tos register, and then we press reset to write the data which is already prefixed
+in the code and then we read again using read FSM and we get the -ve new value in Tos
+register. Written value here in this picture is -15A, i.e., -346 degree Celsius (for sample
+purpose)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
