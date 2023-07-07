@@ -39,11 +39,15 @@ addreess of the register we are going to acess.
 
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/751e684a-e904-4a69-870a-ffc176a7b8be)
 
+**_Timing diagram for reading 2 byte data from the Tos or Thys or Temp Register._
+**
+
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/97c9a81e-c28c-4a97-b4f8-3aef53a84c20)
-_for reading 2 byte data from the Tos or Thys or Temp Register._
+
+**_Timing diagram for write Tos or Thyst registers._**
 
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/5b20b788-e117-4550-a7e7-f5859c560a08)
-_Timing diagram for write Tos or Thyst registers._
+
 
 
 
