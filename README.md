@@ -69,14 +69,14 @@ addreess of the register we are going to acess.
 
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/00b8ac9d-8308-430e-b380-d58f4922c4e3)
 
-_**Simulation waveform for writing data**_
+_**Simulation waveform for reading data**_
 
 
 
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/b1ff8f97-92a7-4d58-8de1-0d9946c5f2e4)
 
 
-_**Simulation waveform for reading data**_
+_**Simulation waveform for writting data**_
 
 # Verfication of the design using SV
 
