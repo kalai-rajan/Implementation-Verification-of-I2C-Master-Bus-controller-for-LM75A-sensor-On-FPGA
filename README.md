@@ -26,13 +26,13 @@ Thys and Tos registers are read and writeable. Default value of the Thys is 75 a
 Thys and Tos acts as upper and lower threshold values. So if value in Temperature register cross above 
 or below the TOs or Thys value the OS pin of the Sensor is asserted low.(since it is active low pin).
 
-##Timing diagram to read and write the registers
+### Timing diagram to read and write the registers
 
 The timing diagram are taken from the [LM75A Datasheet](https://www.nxp.com/docs/en/data-sheet/LM75A.pdf) provided by 
 NXP Semiconductors. The timing diagram is based upon the I2C Protocol, and this timing diagram is the basis to design 
 of I2C master bus controller state machine and implement them in the FPGA using Verilog.
 
-![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/fad98b5b-b194-4695-baff-62aa89e37825)
+![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/97c9a81e-c28c-4a97-b4f8-3aef53a84c20)
 _Timing diagram for reading 2 byte data from the Tos or Thys or Temp Register._
 
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/5b20b788-e117-4550-a7e7-f5859c560a08)
