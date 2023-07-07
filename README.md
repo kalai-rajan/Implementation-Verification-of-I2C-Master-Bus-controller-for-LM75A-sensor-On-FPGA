@@ -6,8 +6,8 @@ for interfacing LM75A Sesnor with Altera DE1 FPGA.
 **Technical Skills**  
 Hardware description Language  : Verilog.  
 Hardware Verification Language : System Verilog.  
-Tools Worked with              : Modelsim, Questasim, Altera Quartus.  
-Hardware Boards worked with    : Altera Cyclone series DE1 FPGA.  
+Tools used                     : Modelsim, Questasim, Altera Quartus.  
+Hardware Boards used           : Altera Cyclone series DE1 FPGA.  
 
 # LM75A SENSOR
 
