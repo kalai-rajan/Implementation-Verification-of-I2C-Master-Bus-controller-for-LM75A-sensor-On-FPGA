@@ -1,5 +1,6 @@
 #  Design  Implementation & Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA
-
+In this project a I2C master bus controller (is designed using Verilog HDL and the design is verified using System verilog)
+for interfacing LM75A Sesnor with Altera DE1 FPGA.
 # LM75A SENSOR
 
 LM75A is a 11-bot digital temperature sensor based on I2C protocol, it has semiconductor based sensor which outputs analog 
@@ -24,6 +25,7 @@ data is given in the [LM75A Datasheet](https://www.nxp.com/docs/en/data-sheet/LM
 Thys and Tos registers are read and writeable. Default value of the Thys is 75 and TOS is 80.
 Thys and Tos acts as upper and lower threshold values. So if value in Temperature register cross above 
 or below the TOs or Thys value the OS pin of the Sensor is asserted low.(since it is active low pin).
+
 
 
 
