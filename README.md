@@ -43,6 +43,7 @@ addreess of the register we are going to acess.
 
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/97c9a81e-c28c-4a97-b4f8-3aef53a84c20)
 
+
 **_Timing diagram for writting Tos or Thyst registers._**
 
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/5b20b788-e117-4550-a7e7-f5859c560a08)
@@ -66,6 +67,9 @@ addreess of the register we are going to acess.
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/b1ff8f97-92a7-4d58-8de1-0d9946c5f2e4)
 
 #######Verfication of the design using SV
+
+![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/85e57cfb-3eed-49d3-ab20-e498f6223078)
+
 
 [click  here to execute  the Testebench code in EDA Playground](https://www.edaplayground.com/x/me93)
 
