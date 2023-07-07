@@ -55,6 +55,8 @@ addreess of the register we are going to acess.
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/e15c9a13-7bbd-4322-8ab1-154d739cd9f2)
 
 **_State machine for writting Tos or Thyst registers._**
+
+
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/7991f9d7-e776-4f08-96a5-5cdb37b57980)
 
 # Simulation 
