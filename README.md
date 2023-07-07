@@ -15,5 +15,5 @@ registers are
 All the above 3 registers are 16bit wide. Temperature register have the temperature data in 
 2’s compliment form. The 1’st 11bit from 15th bit to 5th bit constitute the temperature data, 
 whereas remaining bits are don’t cares. The way to calculate the actual temperature data from binary
-data is given in the [LM75A Datasheet] (https://www.nxp.com/docs/en/data-sheet/LM75A.pdf).
+data is given in the [LM75A Datasheet] (https://www.nxp.com/docs/en/data-sheet/LM75A.pdf)
 
