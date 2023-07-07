@@ -8,7 +8,8 @@ There are three registers in LM75A sensor, out of these three registers, we have
 registers read/write capability, whereas remaining one as only read access. The three 
 registers are
 
-<img align="center" src="![blockdia](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/2a61e099-5672-4953-bba6-dd4cc9fdcf49)" height="100" />
+![blockdia](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/91e63a10-be7f-43b9-880f-7e18c5ec11be)
+
 
 1. Temperature Register. (Read only)
 2. Tos Resgister.(Read/write)
