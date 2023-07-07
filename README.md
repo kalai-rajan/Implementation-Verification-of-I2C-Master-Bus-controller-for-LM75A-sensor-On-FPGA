@@ -4,10 +4,10 @@ In this project a I2C master bus controller (is designed using Verilog HDL and t
 for interfacing LM75A Sesnor with Altera DE1 FPGA.
 
 **Technical Skills**  
-Hardware description Language  : Verilog.  
-Hardware Verification Language : System Verilog.  
-Tools used                     : Modelsim, Questasim, Altera Quartus.  
-Hardware Boards used           : Altera Cyclone series DE1 FPGA.  
+Hardware description Language    : Verilog.  
+Hardware Verification Language   : System Verilog.  
+Tools used                       : Modelsim, Questasim, Altera Quartus.  
+Hardware Boards used             : Altera Cyclone series DE1 FPGA.  
 
 # LM75A SENSOR
 
