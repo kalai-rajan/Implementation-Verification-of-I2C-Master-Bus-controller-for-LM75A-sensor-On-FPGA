@@ -1,6 +1,8 @@
 #  Design  Implementation & Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA
+
 In this project a I2C master bus controller (is designed using Verilog HDL and the design is verified using System verilog)
 for interfacing LM75A Sesnor with Altera DE1 FPGA.
+
 ## LM75A SENSOR
 
 LM75A is a 11-bot digital temperature sensor based on I2C protocol, it has semiconductor based sensor which outputs analog 
@@ -32,8 +34,12 @@ The timing diagram are taken from the [LM75A Datasheet](https://www.nxp.com/docs
 NXP Semiconductors. The timing diagram is based upon the I2C Protocol, and this timing diagram is the basis to design 
 of I2C master bus controller state machine and implement them in the FPGA using Verilog.
 
+The pointer byte is 8bit long and first 6 bits value will be 0, the remaing 2 bit value, has 
+addreess of the register we are going to acess.
+![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/751e684a-e904-4a69-870a-ffc176a7b8be)
+
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/97c9a81e-c28c-4a97-b4f8-3aef53a84c20)
-_Timing diagram for reading 2 byte data from the Tos or Thys or Temp Register._
+_diagram for reading 2 byte data from the Tos or Thys or Temp Register._
 
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/5b20b788-e117-4550-a7e7-f5859c560a08)
 _Timing diagram for write Tos or Thyst registers._
