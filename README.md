@@ -4,10 +4,10 @@ In this project a I2C master bus controller (is designed using Verilog HDL and t
 for interfacing LM75A Sesnor with Altera DE1 FPGA.
 
 **Applied Technical Skills**
-Hardware description Language  : Verilog.
-Hardware Verification Language : System Verilog.
-Tools Worked with              : Modelsim, Questasim, Altera Quartus.
-Hardware Boards worked with    : Altera Cyclone series DE1 FPGA.
+Hardware description Language  : Verilog.  
+Hardware Verification Language : System Verilog.  
+Tools Worked with              : Modelsim, Questasim, Altera Quartus.  
+Hardware Boards worked with    : Altera Cyclone series DE1 FPGA.  
 
 # LM75A SENSOR
 
@@ -104,14 +104,14 @@ The pointer register inputs are configured as 00 also after releasing the reset 
 to see the data of the temperature register in seven segment display which is encoded in
 hexadecimal value. The actual value in degrees in given in below calculations.
 
-Calculations:
-P 0 F E
-P- POSITIVE
-0FE- 0000 1111 1110.
-0000 1111 1110 = 254
-temp= resolution*254
-=0.125*254
-=31.75 degree C
+Calculations:  
+P 0 F E  
+P- POSITIVE  
+0FE- 0000 1111 1110.  
+0000 1111 1110 = 254  
+temp= resolution*254  
+=0.125*254  
+=31.75 degree C    
 
 **READING Tos DATA**
 
@@ -119,33 +119,33 @@ temp= resolution*254
 
 After changing the reset button, we obtain the data in the seven segment display and the
 data is encoded in the hexadecimal format the following calculations get us the actual
-values.
+values.  
 
-Calculations
-P 0 A 0
-P- POSITIVE
-0FE-0000 1010 0000
-0000 1010 0000 = 160.
-temp= resolution*160.
-=0.5*160.
-=80 degree celsius.
+Calculations   
+P 0 A 0  
+P- POSITIVE  
+0FE-0000 1010 0000  
+0000 1010 0000 = 160.   
+temp= resolution*160.   
+=0.5*160.    
+=80 degree celsius.    
 
-**READING Thys DATA**
+**READING Thys DATA**  
 
-![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/03dda51a-85ed-4d92-b576-1cf4959ce751)
+![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/03dda51a-85ed-4d92-b576-1cf4959ce751)  
 
 The same procedure of changing the pointer register pins from 00 to 11 is done now and
 then we need to press the reset button to get the data of Thys Register and its actual value
 is calculated is as follows.
 
-Calculations
-P 0 9 6
-P- POSITIVE
-0FE-0000 1001 0110
-0000 1001 0110 = 150
-temp= resolution*150
-=0.5*150
-=75 degree C
+Calculations  
+P 0 9 6  
+P- POSITIVE  
+0FE-0000 1001 0110  
+0000 1001 0110 = 150  
+temp= resolution*150  
+=0.5*150  
+=75 degree C  
 
 **READING Tos DATA after writting some value**
 
