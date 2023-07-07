@@ -17,3 +17,5 @@ All the above 3 registers are 16bit wide. Temperature register have the temperat
 whereas remaining bits are don’t cares. The way to calculate the actual temperature data from binary
 data is given in the [LM75A Datasheet](https://www.nxp.com/docs/en/data-sheet/LM75A.pdf) (page no 7).
 
+
+![blockdia](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/2a61e099-5672-4953-bba6-dd4cc9fdcf49)
