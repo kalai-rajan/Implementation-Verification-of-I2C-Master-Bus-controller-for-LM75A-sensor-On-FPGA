@@ -1,6 +1,6 @@
 #  Design  Implementation & Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA
 
-## LM75A SENSOR
+# LM75A SENSOR
 
 LM75A is a 11-bot digital temperature sensor based on I2C protocol, it has semiconductor based sensor which outputs analog 
 values,the analog value is converted  into the 11 bit digital data using A2D Conveter which has a conversion time
