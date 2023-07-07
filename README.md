@@ -3,7 +3,7 @@
 In this project a I2C master bus controller (is designed using Verilog HDL and the design is verified using System verilog)
 for interfacing LM75A Sesnor with Altera DE1 FPGA.
 
-## LM75A SENSOR
+# LM75A SENSOR
 
 LM75A is a 11-bot digital temperature sensor based on I2C protocol, it has semiconductor based sensor which outputs analog 
 values,the analog value is converted  into the 11 bit digital data using A2D Conveter which has a conversion time
@@ -28,7 +28,7 @@ Thys and Tos registers are read and writeable. Default value of the Thys is 75 a
 Thys and Tos acts as upper and lower threshold values. So if value in Temperature register cross above 
 or below the TOs or Thys value the OS pin of the Sensor is asserted low.(since it is active low pin).
 
-### Timing diagram to read and write the registers
+# Timing diagram to read and write the registers
 
 The timing diagram are taken from the [LM75A Datasheet](https://www.nxp.com/docs/en/data-sheet/LM75A.pdf) provided by 
 NXP Semiconductors. The timing diagram is based upon the I2C Protocol, and this timing diagram is the basis to design 
@@ -48,7 +48,7 @@ addreess of the register we are going to acess.
 
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/5b20b788-e117-4550-a7e7-f5859c560a08)
 
-#### State machine design
+# State machine design
 
 **Stae machine for reading 2 byte data from the Tos or Thys or Temp Register._**
 
@@ -57,19 +57,20 @@ addreess of the register we are going to acess.
 **_State machine for writting Tos or Thyst registers._**
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/7991f9d7-e776-4f08-96a5-5cdb37b57980)
 
-##### Simulation 
-
-**Simulation waveform for reading data**
+# Simulation 
 
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/00b8ac9d-8308-430e-b380-d58f4922c4e3)
 
+_**Simulation waveform for reading data**_
 
-**Simulation waveform for writting data**
 
 
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/b1ff8f97-92a7-4d58-8de1-0d9946c5f2e4)
 
-###### Verfication of the design using SV
+
+_**Simulation waveform for reading data**_
+
+# Verfication of the design using SV
 
 ![image](https://github.com/kalai-rajan/Implementation-Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA/assets/127617640/85e57cfb-3eed-49d3-ab20-e498f6223078)
 
@@ -79,7 +80,7 @@ _The testbench was devoloped using the System Verilog Testbench Architecture and
 
 [click  here to execute  the Testebench code in EDA Playground](https://www.edaplayground.com/x/me93)
 
-###### Implementation in FPGA
+# Implementation in FPGA
 
 The _**ALtera DE1 FPGA**_ is used to implement the I2C Master bus controller designed using Verilog, using 
 **_Altera Quartus tool._**
