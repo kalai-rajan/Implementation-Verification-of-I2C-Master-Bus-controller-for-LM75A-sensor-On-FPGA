@@ -1,3 +1,9 @@
+# Files Description
+**i2c_read_write.v:**Contains the design module.
+**i2c_read_tb.v:**Contains Linear testbench to test read operations.  
+**i2c_write_tb.v:**Contains linear testbench to test write operations. 
+**i2c_read_write_tb2.sv:** Contains constrained random testbench based   on SV TB architecture to test both  read and write operations.
+
 #  Design  Implementation & Verification-of-I2C-Master-Bus-controller-for-LM75A-sensor-On-FPGA
 
 In this project a I2C master bus controller (is designed using Verilog HDL and the design is verified using System verilog)
